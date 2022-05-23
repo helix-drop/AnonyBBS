@@ -9,5 +9,9 @@ func NewRouter() *gin.Engine {
 	r := gin.Default()
 	r.POST("/register", handlers.Register)
 	r.POST("/login", handlers.Login)
+
+	r.POST("/sendtopic", handlers.SendTopic)
+	r.POST("/sendreply", handlers.SendReply)
+
 	return r
 }

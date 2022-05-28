@@ -1,0 +1,18 @@
+{{ define "/showmes.html" }}
+
+<form class="form-signin center" role="form" action="../handlers/login" method="post">
+    <h2 class="form-signin-heading">
+        <i class="fa fa-comments-o">
+            AnonyBBS :
+        </i>
+    </h2>
+    <br>
+    <div class="lead">
+        {{ .msg }}
+    </div>
+    <br>
+    <br/>
+    <a class="lead pull-right" href="/{{ .backto }}">点击此处返回</a>
+</form>
+
+{{ end }}

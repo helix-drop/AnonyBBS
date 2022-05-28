@@ -1,0 +1,26 @@
+{{ define "/index.html" }}
+
+{{ range $i,$v:= . }}
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <span class="lead"> <i class="fa fa-comment-o"></i> {{ $v.TopicTitle }}</span>
+    </div>
+    <div class="panel-body">
+        {{ $v.AnonyId }} said:
+        <div style="text-indent: 2px">{{ $v.TopicContent }}
+        </div>
+        <div class="pull-right">when {{ $v.CreatedAt  }}
+        </div>
+        <br>
+        <div class="pull-right">
+            <form role="form" action="../handlers/showreply" method="get">
+                <input name="ID" value={{$v.ID}} style="display: none">
+            <button>Show Replies
+            </button>
+            </form>
+        </div>
+    </div>
+</div>
+{{ end }}
+
+{{ end }}

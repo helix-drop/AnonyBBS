@@ -16,25 +16,42 @@ type RegisterInfo struct {
 }
 
 func Register(c *gin.Context) {
+	c.SetCookie("anony_id", "", -1, "/", "/", false, true)
+	c.SetCookie("name", "", -1, "/", "/", false, true)
 	var info RegisterInfo
-	if err := c.ShouldBindJSON(&info); err != nil {
+	if err := c.ShouldBind(&info); err != nil {
 		println(logger.Error)
-		c.JSON(http.StatusBadRequest, gin.H{"msg": "json信息错误"})
+		c.HTML(http.StatusOK, "/suc.html", gin.H{
+			"msg": "Bind信息错误",
+		})
 		return
 	}
-	if !(IsExistName(info.Name) && IsExistEmail(info.Email)) {
+	if IsExistEmail(info.Email) {
 		println(logger.Error)
-		c.JSON(http.StatusBadRequest, gin.H{"msg": "用户名或邮箱已注册"})
+		c.HTML(http.StatusOK, "/suc.html", gin.H{
+			"msg": "邮箱已被注册",
+		})
+
+		return
+	}
+	if IsExistName(info.Name) {
+		println(logger.Error)
+		c.HTML(http.StatusOK, "/suc.html", gin.H{
+			"msg": "用户名已被注册",
+		})
 		return
 	}
 	if info.PassWord != info.PwdConfirm {
 		println(logger.Error)
-		c.JSON(http.StatusBadRequest, gin.H{"msg": "密码不匹配"}) //TODO 具体化错误信息
+		c.HTML(http.StatusOK, "/suc.html", gin.H{
+			"msg": "密码不匹配",
+		})
 		return
 	}
+	//加密
 	bytesPwd, err := bcrypt.GenerateFromPassword([]byte(info.PassWord), 10)
 	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
+		c.HTML(http.StatusInternalServerError, "/suc.html", gin.H{
 			"msg": "密码加密失败"})
 
 		return
@@ -44,10 +61,17 @@ func Register(c *gin.Context) {
 		Email:    info.Email,
 		PassWord: string(bytesPwd),
 	}
-
+	//注册用户成功
 	err = models.DB.Create(&user).Error
 	if err != nil {
 		logger.Error.Println("注册失败", err)
+		c.HTML(http.StatusBadRequest, "/suc.html", gin.H{
+			"msg": "注册失败！",
+		})
+	} else {
+		logger.Info.Println("注册成功", info.Name)
+		c.HTML(http.StatusOK, "/suc.html", gin.H{
+			"msg": "注册成功，欢迎!",
+		})
 	}
-	logger.Info.Println("注册成功", info.Name)
 }

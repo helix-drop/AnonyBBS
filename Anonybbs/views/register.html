@@ -1,0 +1,20 @@
+{{ define "/register.html" }}
+
+<form class="form-signin" role="form" action="../handlers/register" method="post">
+    <h2 class="form-signin-heading">
+        <i class="fa fa-comments-o">
+            AnonyBBS
+        </i>
+    </h2>
+    <input id="name" type="text" name="Name" class="form-control" placeholder="Name" required autofocus>
+    <input type="email" name="Email" class="form-control" placeholder="Email address" required>
+    <input type="password" name="PassWord" class="form-control" placeholder="Password" required>
+    <input type="password" name="PwdConfirm " class="form-control" placeholder="Password confirm" required>
+   <br>
+    <div class="lead">
+        {{ .info }}
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">submit</button>
+</form>
+
+{{ end }}

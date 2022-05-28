@@ -1,3 +1,122 @@
 [Info] 2022/05/23 05:29:17.994535 register.go:52: 注册成功 miaop
 [Info] 2022/05/23 09:15:28.729748 register.go:52: 注册成功 
 [Info] 2022/05/23 09:16:52.449638 register.go:52: 注册成功 qm
+[Info] 2022/05/24 05:25:13.754508 register.go:52: 注册成功 
+[Info] 2022/05/24 05:27:01.192944 register.go:52: 注册成功 
+[Info] 2022/05/24 05:28:29.848017 register.go:52: 注册成功 
+[Info] 2022/05/24 05:29:06.399449 register.go:52: 注册成功 
+[Info] 2022/05/24 05:29:19.466213 register.go:52: 注册成功 
+[Info] 2022/05/24 05:30:44.970796 register.go:52: 注册成功 
+[Info] 2022/05/24 05:30:52.823083 register.go:52: 注册成功 
+[Info] 2022/05/24 05:31:36.375618 register.go:52: 注册成功 
+[Info] 2022/05/24 05:34:22.239632 register.go:52: 注册成功 
+[Info] 2022/05/24 05:35:11.687676 register.go:52: 注册成功 
+[Info] 2022/05/24 05:44:08.890820 register.go:52: 注册成功 qs
+[Info] 2022/05/24 05:44:11.111826 register.go:52: 注册成功 qs
+[Info] 2022/05/24 05:44:13.466121 register.go:52: 注册成功 qs
+[Info] 2022/05/24 05:45:30.480520 register.go:52: 注册成功 qs
+[Info] 2022/05/24 05:46:50.467935 register.go:52: 注册成功 qs
+[Info] 2022/05/24 05:54:44.022254 register.go:52: 注册成功 qqs
+[Info] 2022/05/24 05:54:59.575463 register.go:52: 注册成功 qqs
+[Info] 2022/05/24 06:01:11.411519 register.go:52: 注册成功 qqs
+[Info] 2022/05/24 06:01:12.958278 register.go:52: 注册成功 qqs
+[Info] 2022/05/24 06:01:13.912411 register.go:52: 注册成功 qqs
+[Info] 2022/05/24 06:01:14.735133 register.go:52: 注册成功 qqs
+[Info] 2022/05/24 06:01:15.507754 register.go:52: 注册成功 qqs
+[Info] 2022/05/24 06:01:16.289877 register.go:52: 注册成功 qqs
+[Info] 2022/05/24 06:03:26.106182 register.go:52: 注册成功 lqqs
+[Info] 2022/05/24 06:17:57.332593 register.go:52: 注册成功 lqqs
+[Info] 2022/05/24 06:18:24.119130 register.go:52: 注册成功 lqqs
+[Info] 2022/05/24 06:18:24.904667 register.go:52: 注册成功 lqqs
+[Info] 2022/05/24 06:18:25.416218 register.go:52: 注册成功 lqqs
+[Info] 2022/05/24 06:18:26.329719 register.go:52: 注册成功 lqqs
+[Info] 2022/05/24 06:19:10.459104 register.go:52: 注册成功 lqqs
+[Info] 2022/05/24 06:19:12.400697 register.go:52: 注册成功 lqqs
+[Info] 2022/05/24 10:00:40.212015 register.go:52: 注册成功 mmqqs
+[Info] 2022/05/24 10:00:46.610931 register.go:52: 注册成功 mmqqs
+[Info] 2022/05/24 10:05:43.742993 register.go:57: 注册成功 mmq0qs
+[Info] 2022/05/24 11:21:29.369985 register.go:57: 注册成功 abc
+[Info] 2022/05/24 11:49:22.445748 login.go:37: 登录成功 mmq0qs
+[Info] 2022/05/24 11:54:51.347903 login.go:39: 登录成功 mmq0qs
+[Info] 2022/05/24 21:25:41.834258 login.go:39: 登录成功 mmq0qs
+[Info] 2022/05/25 22:11:02.457223 login.go:39: 登录成功 mmq0qs
+[Error] 2022/05/25 22:11:26.587693 post.go:56: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`))
+[Info] 2022/05/25 22:13:20.732048 login.go:39: 登录成功 mmq0qs
+[Error] 2022/05/25 22:13:30.533852 post.go:56: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`))
+[Error] 2022/05/25 22:19:47.800828 post.go:52: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`))
+[Error] 2022/05/25 22:20:21.173435 post.go:52: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`))
+[Info] 2022/05/25 22:24:57.332877 post.go:61: 发帖成功！
+[Error] 2022/05/25 22:34:15.311037 post.go:56: 发帖失败！ Error 1366: Incorrect integer value: 'mmq0qs' for column 'user_name' at row 1
+[Error] 2022/05/25 22:42:03.095547 post.go:56: 发帖失败！ Error 1366: Incorrect integer value: 'mmq0qs' for column 'user_name' at row 1
+[Error] 2022/05/25 22:53:44.421674 post.go:62: 发帖失败！ Error 1366: Incorrect integer value: 'mmq0qs' for column 'user_name' at row 1
+[Error] 2022/05/25 22:55:32.886341 post.go:61: 发帖失败！ Error 1366: Incorrect integer value: 'mmq0qs' for column 'user_name' at row 1
+[Error] 2022/05/25 22:56:45.949933 post.go:60: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_name`) REFERENCES `users` (`id`))
+[Error] 2022/05/25 22:57:23.228169 post.go:61: 发帖失败！ Error 1366: Incorrect integer value: 'mmq0qs' for column 'user_name' at row 1
+[Error] 2022/05/25 23:08:27.658697 post.go:61: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_name`) REFERENCES `users` (`id`))
+[Error] 2022/05/25 23:08:59.496207 post.go:61: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_name`) REFERENCES `users` (`id`))
+[Error] 2022/05/25 23:12:06.454066 post.go:61: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_name`) REFERENCES `users` (`id`))
+[Error] 2022/05/25 23:17:57.032450 post.go:61: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_name`) REFERENCES `users` (`id`))
+[Error] 2022/05/25 23:27:32.224296 post.go:60: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_name`) REFERENCES `users` (`id`))
+[Error] 2022/05/25 23:56:13.594952 post.go:63: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`topics`, CONSTRAINT `fk_users_topics` FOREIGN KEY (`user_name`) REFERENCES `users` (`id`))
+[Info] 2022/05/25 23:57:58.926077 post.go:68: 发帖成功！
+[Info] 2022/05/25 23:59:02.619171 post.go:68: 发帖成功！
+[Info] 2022/05/26 00:12:04.000834 post.go:111: 回帖成功！
+[Info] 2022/05/26 00:17:53.188303 login.go:39: 登录成功 mmq0qs
+[Info] 2022/05/26 00:19:09.768153 post.go:114: 回帖成功！
+[Info] 2022/05/26 02:25:38.527213 login.go:39: 登录成功 mmq0qs
+[Info] 2022/05/26 02:26:17.989345 post.go:68: 发帖成功！
+[Info] 2022/05/26 02:30:17.871300 login.go:42: 登录成功 mmq0qs
+[Info] 2022/05/26 02:31:07.279135 post.go:68: 发帖成功！
+[Info] 2022/05/26 02:32:06.109997 login.go:42: 登录成功 mmq0qs
+[Info] 2022/05/26 02:35:05.322726 login.go:44: 登录成功 mmq0qs
+[Info] 2022/05/26 02:35:12.234828 login.go:44: 登录成功 mmq0qs
+[Info] 2022/05/26 02:36:58.193823 login.go:44: 登录成功 mmq0qs
+[Info] 2022/05/26 23:39:49.945700 login.go:44: 登录成功 mmq0qs
+[Info] 2022/05/26 23:57:19.078481 login.go:45: 登录成功 mmq0qs
+[Info] 2022/05/27 00:04:30.147485 login.go:45: 登录成功 mmq0qs
+[Info] 2022/05/27 00:05:42.380508 login.go:45: 登录成功 mmq0qs
+[Info] 2022/05/27 00:09:55.563154 login.go:45: 登录成功 mmq0qs
+[Info] 2022/05/27 00:10:25.968651 login.go:45: 登录成功 mmq0qs
+[Info] 2022/05/27 00:18:34.065265 register.go:71: 注册成功 
+[Info] 2022/05/27 00:35:59.829071 login.go:45: 登录成功 abc
+[Info] 2022/05/27 01:21:31.949261 login.go:45: 登录成功 abc
+[Info] 2022/05/27 01:22:23.923578 login.go:45: 登录成功 mmq0qs
+[Info] 2022/05/27 04:01:08.397572 login.go:45: 登录成功 mmq0qs
+[Info] 2022/05/27 14:42:30.143034 login.go:46: 登录成功 mmq0qs
+[Info] 2022/05/27 14:59:57.945671 login.go:46: 登录成功 mmq0qs
+[Info] 2022/05/27 15:05:41.542273 login.go:46: 登录成功 mmq0qs
+[Info] 2022/05/27 15:06:57.070442 login.go:46: 登录成功 mmq0qs
+[Info] 2022/05/27 15:08:17.375961 login.go:46: 登录成功 mmq0qs
+[Info] 2022/05/27 15:10:42.755444 login.go:43: 登录成功 mmq0qs
+[Info] 2022/05/27 15:19:10.327583 login.go:43: 登录成功 mmq0qs
+[Info] 2022/05/27 15:19:42.422125 login.go:43: 登录成功 mmq0qs
+[Info] 2022/05/27 15:21:22.694921 posttopic.go:58: 发帖成功！
+[Info] 2022/05/27 15:27:08.567593 posttopic.go:58: 发帖成功！
+[Info] 2022/05/28 14:08:27.494376 login.go:43: 登录成功 abc
+[Info] 2022/05/28 14:08:44.791128 posttopic.go:59: 发帖成功！
+[Error] 2022/05/28 14:10:22.520805 posttopic.go:60: 发帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`replies`, CONSTRAINT `fk_users_replies` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`))
+[Info] 2022/05/28 14:11:23.024549 posttopic.go:66: 发帖成功！
+[Info] 2022/05/28 15:13:55.819647 posttopic.go:66: 发帖成功！
+[Info] 2022/05/28 17:17:52.427424 login.go:43: 登录成功 abc
+[Error] 2022/05/28 17:17:55.761646 postreply.go:61: 回帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`replies`, CONSTRAINT `fk_topics_replies` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`))
+[Error] 2022/05/28 17:21:50.794950 postreply.go:61: 回帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`replies`, CONSTRAINT `fk_topics_replies` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`))
+[Error] 2022/05/28 17:23:28.064459 postreply.go:61: 回帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`replies`, CONSTRAINT `fk_topics_replies` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`))
+[Error] 2022/05/28 17:30:19.012918 postreply.go:61: 回帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`replies`, CONSTRAINT `fk_topics_replies` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`))
+[Error] 2022/05/28 17:30:27.554439 postreply.go:61: 回帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`replies`, CONSTRAINT `fk_topics_replies` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`))
+[Error] 2022/05/28 17:32:06.535856 postreply.go:61: 回帖失败！ Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bbs`.`replies`, CONSTRAINT `fk_topics_replies` FOREIGN KEY (`topic_id`) REFERENCES `topics` (`id`))
+[Info] 2022/05/28 19:48:48.821624 login.go:43: 登录成功 abc
+[Info] 2022/05/28 20:31:29.294923 login.go:43: 登录成功 abc
+[Info] 2022/05/28 20:37:07.237399 postreply.go:68: 回帖成功！
+[Info] 2022/05/28 20:37:17.177711 postreply.go:68: 回帖成功！
+[Info] 2022/05/28 20:44:52.398333 posttopic.go:76: 发帖成功！
+[Info] 2022/05/28 20:45:31.048075 postreply.go:73: 回帖成功！
+[Info] 2022/05/28 20:45:49.868777 postreply.go:73: 回帖成功！
+[Info] 2022/05/28 20:48:47.037866 postreply.go:73: 回帖成功！
+[Info] 2022/05/28 20:49:08.428399 postreply.go:73: 回帖成功！
+[Info] 2022/05/28 20:58:33.415873 postreply.go:73: 回帖成功！
+[Info] 2022/05/28 20:58:48.039516 postreply.go:73: 回帖成功！
+[Info] 2022/05/28 21:00:10.433676 postreply.go:73: 回帖成功！
+[Info] 2022/05/28 21:12:08.899865 postreply.go:75: 回帖成功！
+[Info] 2022/05/28 21:13:26.105855 postreply.go:75: 回帖成功！
+[Info] 2022/05/28 21:14:34.293667 postreply.go:75: 回帖成功！
+[Info] 2022/05/28 21:15:24.114397 postreply.go:75: 回帖成功！

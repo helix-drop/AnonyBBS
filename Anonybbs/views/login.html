@@ -1,0 +1,22 @@
+{{ define "/login.html" }}
+
+<form class="form-signin center" role="form" action="../handlers/login" method="post">
+    <h2 class="form-signin-heading">
+        <i class="fa fa-comments-o">
+            AnonyBBS
+        </i>
+    </h2>
+    <input type="email" name="Email" class="form-control" placeholder="Email address" required autofocus>
+    <input type="password" name="PassWord" class="form-control" placeholder="Password" required>
+    <br/>
+    <div class="lead">
+        {{ .msg }}
+    </div>
+    <br>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+    <br/>
+    <a class="lead pull-right" href="/signup">Register</a>
+</form>
+
+{{ end }}

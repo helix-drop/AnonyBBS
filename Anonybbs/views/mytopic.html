@@ -1,0 +1,29 @@
+{{ define "/mytopic.html" }}
+
+<div class="lead">
+  <div>My Topic / <a href="/myreply">My Relpy</a></div>
+</div>
+
+
+{{ range $i,$v:= . }}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <span class="lead"> <i class="fa fa-comment-o"></i> {{ $v.TopicTitle }}</span>
+  </div>
+  <div class="panel-body">
+    Me said:
+    <p style="text-indent: 2px">
+    <div>{{ $v.TopicContent }}
+    </div>
+    </p>
+    <div class="pull-right">when {{ $v.CreatedAt  }}
+    </div>
+    <br>
+    <div class="pull-right">
+      <a href="/">Show Replies</a>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ end }}

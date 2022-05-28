@@ -1,0 +1,15 @@
+{{ define "/new.post.html" }}
+
+<form role="form" action="../handlers/posttopic" method="post">
+    <div class="lead">Post a new topic!</div>
+    <div class="form-group">
+        <textarea class="form-control" name="TopicTitle" id="TopicTitle" placeholder="  Title" rows="1"></textarea>
+        <br>
+        <textarea class="form-control" name="TopicContent" id="TopicContent" placeholder="  Content" rows="4"></textarea>
+        <br/>
+        <br/>
+        <button class="btn btn-lg btn-primary pull-right" type="submit">Post a Topic</button>
+    </div>
+</form>
+
+{{ end }}

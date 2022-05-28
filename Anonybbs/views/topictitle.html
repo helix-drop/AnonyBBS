@@ -1,0 +1,27 @@
+{{ define "/topictitle.html" }}
+<div class="panel-body">
+    {{ range $i,$v := . }}
+    {{ if eq $i 0 }}
+    <div style="background-color: #c1e2b3;font-size: large;text-indent: 10px">
+        <span class="lead"> <i class="fa fa-comment-o"></i>
+        {{ $v.TTitle }}
+      </span>
+    </div>
+    <div class="panel-body">
+        {{ $v.TContent}}
+    </div>
+    <div class="pull-right">when {{ $v.CreatedAt.Format "Jan 02, 2006 15:04:05" }}
+    <div><form class="pull-right" role="form" action="../handlers/sendreply" method="post">
+            <input name="TopicID" value={{$v.TopicID}} style="display: none">
+            <input name="ReplyFloor" value=0 style="display: none">
+        <button style=" color: black;border-color: transparent">Reply this Topic
+            </button>
+        </form>
+    </div>
+    </div>
+    {{ else }}
+    {{ end }}
+    {{ end }}
+</div>
+{{ end }}
+

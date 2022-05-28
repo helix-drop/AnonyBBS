@@ -1,0 +1,22 @@
+{{ define "/new.reply.html" }}
+
+<form role="form" action="../postreply" method="post">
+ {{ if eq .ReplyFloor 0 }}
+  <div class="lead">Reply To the Topic</div>
+  {{ else }}
+  <div class="lead">Reply To #{{ .ReplyFloor }} in the Topic</div>
+  {{ end }}
+  <div class="form-group">
+    <textarea class="form-control" name="ReplyContent" id="ReplyContent" placeholder="  Title" rows="4"></textarea>
+    <br>
+    <textarea style="display: none" class="form-control" name="ReplyFloor" id="ReplyFloor" placeholder="" rows="4">{{.ReplyFloor}}</textarea>
+      <textarea style="display: none" class="form-control" name="TopicID" id="TopicID" placeholder="" rows="4">{{.TopicID}}</textarea>
+
+  </div>
+    <br/>
+    <br/>
+    <button class="btn btn-lg btn-primary pull-right" type="submit">Post a Topic</button>
+  </div>
+</form>
+
+{{ end }}

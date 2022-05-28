@@ -1,0 +1,25 @@
+{{ define "/reply.html" }}
+{{ range $i,$v:= . }}
+<div>
+  {{ if eq $v.ReplyFloorId 0 }}
+  {{ else }}
+  <div class="panel-body">
+    <div style="background-color:lightblue">#{{ $i }}
+    {{ $v.AnonyId }} answer to #{{ $v.ReplyFloorTo }} :
+    </div>
+    <div class="panel-body">{{ $v.ReplyContent }}
+    </div>
+    <div class="pull-right">when {{ $v.CreatedAt.Format "Jan 02, 2006 15:04:05"  }}
+   <br>
+      <form class="pull-right" role="form" action="../handlers/sendreply" method="post">
+          <input name="TopicID" value={{$v.TopicID}} style="display: none">
+          <input name="ReplyFloor" value={{$i}} style="display: none">
+          <button style=" color: black;border-color: transparent">Reply this Floor
+        </button>
+      </form>
+    </div>
+      {{ end }}
+  </div>
+    {{ end }}
+</div>
+{{ end }}
